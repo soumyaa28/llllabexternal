@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background: #f6f8fa;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background: #fff;
+            padding: 2rem 2.5rem 2.5rem 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            min-width: 320px;
+            width: 100%;
+            max-width: 350px;
+        }
+        .login-container h2 {
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            color: #222;
+        }
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.3rem;
+            font-weight: 500;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 0.6rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+        button {
+            background: #2d8cf0;
+            color: #fff;
+            border: none;
+            padding: 0.7rem;
+            width: 100%;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #2273c4;
+        }
+        .login-footer {
+            margin-top: 1.4rem;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+        .login-footer a {
+            color: #2d8cf0;
+            text-decoration: none;
+        }
+        .login-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <form class="login-container" action="/login" method="POST">
+        <h2>Login</h2>
+        <div class="form-group">
+            <label for="username">Username or Email</label>
+            <input type="text" id="username" name="username" autocomplete="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" autocomplete="current-password" required>
+        </div>
+        <button type="submit">Sign In</button>
+        <div class="login-footer">
+           
